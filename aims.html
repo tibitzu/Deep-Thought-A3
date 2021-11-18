@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.header img {float:left}
+.header h1{color: Purple;
+         text-align:center;
+         font-size: 50px;
+         font-family: Fantasy;
+         positon: absolute;
+         left: 5%;}
+
+.header h2{color: Purple;
+         text-align:center;
+         font-size: 20px;
+         font-family: 'Courier New', monospace}
+.header {height: 150px;
+         width: 100%;
+         margin-top: 0px;
+         margin-left: 0px;
+         Padding: 1px;
+         background-color:black;
+}
+  .content {margin-right: 300px;
+             margin-left: 300px;
+             border: 5px solid black;
+             background-color: black;
+             opacity: 0.9;
+             text-align: left;
+             height: auto;
+             font-size: 15px;
+             color: white
+}
+  .content h2{color: purple;
+              font-family: fantasy;}
+  body {background-color: black;
+        background-image: url('Stars.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <a href="index.html">
+    <img src="Earth.jpg" alt="Earth" width="200" height="auto"></a>
+    <h1>Aims and Goals</h1>
+    <h2><a href="progress.html"><b>Back to Plans and Progress</b></a></h2>
+  </div>
+  <div class="content">
+  <h2>Goal</h2>
+  <p>The goal is to create a basic multiplayer rogue-like game that expands as the players explore the world with their characters. The game starts in a walled town with several houses containing non-player characters who the players can interact with, buy items and receive quests, stairs in some of the houses which will lead to other maps within the house, trees, a road, and gates that lead outside of the town. Once reaching a town gate, a player will have the option to leave the town and a new map will be created to represent the wilderness, the road will continue with a chance of turning in a new direction. The town will be populated by guards and the wilderness will be populated with monsters that the players can do combat with.</p>
+  <h2>Aims</h2>
+  <h3>Create a procedurally generated town map:</h3>
+  <p>This is possibly the hardest part of the project since it involves math algorithms, the town will be filled with tiles that are walkable and that do not block sight, meaning that the characters can walk on the tile and can see over the tile, a wall will surround the edge of the town map which a player will not be able to pass over. Random sized rectangles will spawn in random locations across the map but will not overlap other houses, two gates will be spawned on the on the x and y axis of the outer walls of the town, and finally a road will be generated that joins the two gates.</p>
+  <h3>Create basic character generator:</h3>
+  <p>A basic character generator which will create a bunch of statistics such as strength, agility, constitution which will implement some functionality within the game, these statistics will be generated with random numbers between a range. The generator will give the option of a few races such as Human, Dwarf and Elf which will give a hard increase or decrease to the statistics generated. The generator will give the option of a couple of classes or occupations such as Fighter and Wizard. Finally, the generator will have a console which the player will be able to input a name and will return the output of the generator onto a screen that the player can read.</p>
+  <h3>Create a combat system:</h3>
+  <p>The game will include a combat system which will engage when a player moves into a non-player character such as a guard, a monster or other npc. In the case of guards and other npcs, the player will first be given a warning asking if they really want to attack, for monsters, combat will initiate which will be a series of randomly generated results modified by the character’s class resulting in damage until one of the two parties is dead.</p>
+  <h3>Create a welcome screen:</h3>
+  <p>The welcome screen is probably the easiest thing to create and will have a picture and the title of the game. From the welcome screen, a player will be able to create a new character. Since it is intended for the game to eventually be a multiplayer game, there will be no manual saving, however, the game will save a character’s progress within the game automatically and so will need a login in option and an enter world option from the character screen.</p>
+  <h3>Discuss multiplayer functionality:</h3>
+  <p>Multiplayer functionality is beyond the scope of this project however, we hope to discuss how we might implement this in the future. one of the key elements that needs to be discussed, such as whether the game will be turn based or in real time. If turn based, each player will take their turns one at a time and the other entities will all take their turns, this basically simulates your classic “Dungeons and Dragon” role-playing game. To avoid waiting for a player that might be away from the keyboard, a clock will end a players turn after certain amount of time. The other option is for the game to operate in real-time. Other things that need to be discussed, is how the characters can, form groups and trade with each other.</p>
+  <h3>Identify coding and technology requirements:</h3>
+  <p>Since all the members of Deep Thought are novice programmers, what we think is required, may not be so. Therefore, one of our aims is to identify the best languages to do our coding. So far, we have been using Python for coding our game since that is what we have experience with, however, there may be a better language we could use, and other languages for online functionality such as JavaScript. Is it possible to use cloud servers to save the ever-expanding maps which will inevitably be created when players move to a new location?</p>
+  </div>
+</body>
+</html>
